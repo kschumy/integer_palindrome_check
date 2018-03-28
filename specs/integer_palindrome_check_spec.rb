@@ -2,6 +2,9 @@ require 'minitest/autorun'
 require 'minitest/reporters'
 require_relative '../lib/integer_palindrome_check'
 
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+
+
 describe "integer palindrome check" do
   describe "basic tests" do
     it "palindrome input with even digit count" do
